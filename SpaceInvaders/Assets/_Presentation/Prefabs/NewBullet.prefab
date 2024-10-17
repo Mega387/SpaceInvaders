@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6237433501059271191}
   - component: {fileID: 2586090851508330479}
   - component: {fileID: 2965784621945774246}
+  - component: {fileID: -570065621751653329}
+  - component: {fileID: 511787647159450647}
   - component: {fileID: 5271139472233648704}
   m_Layer: 0
   m_Name: NewBullet
@@ -29,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.76, y: -8.84, z: 0}
-  m_LocalScale: {x: 0.11754824, y: 0.14315397, z: 1}
+  m_LocalScale: {x: 0.08222264, y: 0.10013334, z: 0.69948}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,6 +123,32 @@ CapsuleCollider2D:
   m_Offset: {x: -0.004085933, y: 0.33149716}
   m_Size: {x: 3.468342, y: 7.86237}
   m_Direction: 0
+--- !u!114 &-570065621751653329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294487429000924061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe80dc423b847b44b1855404b35fe81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenge: 0
+--- !u!114 &511787647159450647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294487429000924061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb40971780b1e344b25acfc5a8f2281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBullet: 15
 --- !u!50 &5271139472233648704
 Rigidbody2D:
   serializedVersion: 4
@@ -147,4 +175,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
