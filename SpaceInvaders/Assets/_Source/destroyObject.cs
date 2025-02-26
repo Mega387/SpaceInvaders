@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class destroyObject : MonoBehaviour
 {
+    Points Points;
   
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("playerbullet"))
+        {
+            Destroy(gameObject);
+            Points.points += 50;
+        }
     }
 
    

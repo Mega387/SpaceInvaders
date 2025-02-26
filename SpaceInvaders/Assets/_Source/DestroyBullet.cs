@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class DestroyBullet : MonoBehaviour
 {
-    public bool strenge = false;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (strenge == true)
-        {
-            Destroy(gameObject);
-            Debug.Log("На сквозь");
-        }
-        else
-        {
-            strenge = true;
-            Debug.Log("Броня не пробита");
-        }
+       Destroy(gameObject);
     }
 
 
